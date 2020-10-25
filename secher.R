@@ -48,7 +48,3 @@ intercept<-model$coefficients[1]
 slope<-model$coefficients[2]
 output<-sprintf("slope=%f  intercept=%f",slope, intercept)
 cat(output)
-png("bwt~bpd+ad.png")
-plot(bwt~bpd+ad,data=secher) 
-abline(model)
-dev.off()
